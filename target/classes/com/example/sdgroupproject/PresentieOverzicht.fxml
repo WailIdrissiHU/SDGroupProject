@@ -7,11 +7,11 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #459ab1;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.sdgroupproject.PresentieOverzichtController">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #459ab1;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.sdgroupproject.PresentieOverzichtController">
     <children>
         <AnchorPane layoutX="7.0" layoutY="6.0" prefHeight="385.0" prefWidth="584.0" style="-fx-background-color: #4293a9;">
             <children>
-                <Button fx:id="terugVanOverzichtPresentie" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#handleButtonTerugVanOverzichtPresentie" prefHeight="38.0" prefWidth="82.0" text="Terug" />
+                <Button fx:id="TerugVanOverzichtPresentie" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#handleButtonTerugVanOverzichtPresentie" prefHeight="38.0" prefWidth="82.0" text="Terug" />
                 <Label layoutX="241.0" layoutY="14.0" prefHeight="38.0" prefWidth="198.0" text="Overzicht van je presentie" textAlignment="CENTER" textFill="WHITE">
                     <font>
                         <Font name="Candara" size="18.0" />

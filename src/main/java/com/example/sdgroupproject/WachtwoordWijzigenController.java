@@ -12,13 +12,14 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
-public class PresentieOverzichtController {
+public class WachtwoordWijzigenController {
 
     @FXML
-    private Button TerugVanOverzichtPresentie;
+    private Button TerugVanWachtwoordWijzigen;
 
-    public void handleButtonTerugVanOverzichtPresentie(ActionEvent actionEvent) throws IOException{
-        Stage stage = (Stage) TerugVanOverzichtPresentie.getScene().getWindow();
+    @FXML
+    public void handleButtonTerugVanWachtwoordWijzigen(ActionEvent actionEvent) throws IOException {
+        Stage stage = (Stage) TerugVanWachtwoordWijzigen.getScene().getWindow();
         stage.close();
     }
 }

@@ -3,32 +3,26 @@ package com.example.sdgroupproject;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
-import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
-import javafx.scene.control.ChoiceBox;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
 
 import java.io.IOException;
-import java.nio.Buffer;
 
-public class AfwezigMeldenController {
-
-    @FXML
-    private Button TerugVanAfwezigMelden;
+public class InlogScherm2Controller {
 
     @FXML
-    private ChoiceBox Redenen;
+    private Button LogIn2;
 
     @FXML
-    public void handleButtonTerugVanAfwezigMelden(ActionEvent actionEvent) throws IOException {
-        Stage stage = (Stage) TerugVanAfwezigMelden.getScene().getWindow();
+    public void handleButtonLogIn2(ActionEvent actionEvent) throws IOException {
+        Stage stage = (Stage) LogIn2.getScene().getWindow();
         stage.close();
 
         try {
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("Rooster.fxml"));
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("HomeScherm.fxml"));
             Parent root = loader.load();
 
             Stage newStage = new Stage();
