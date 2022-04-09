@@ -17,8 +17,29 @@ public class RoosterController {
     private Button TerugVanRooster;
 
     @FXML
+    private Button NaarAfwezigMelden;
+
+    @FXML
     public void handleButtonTerugVanRooster(ActionEvent actionEvent) throws IOException {
         Stage stage = (Stage) TerugVanRooster.getScene().getWindow();
         stage.close();
+    }
+
+    @FXML
+    public void handleButtonNaarAfwezigMelden(ActionEvent actionEvent) throws IOException {
+        Stage stage = (Stage) NaarAfwezigMelden.getScene().getWindow();
+        stage.close();
+
+        try {
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("AfwezigMelden.fxml"));
+            Parent root = loader.load();
+
+            Stage newStage = new Stage();
+            newStage.setScene(new Scene(root));
+            newStage.initModality(Modality.APPLICATION_MODAL);
+            newStage.showAndWait();
+        } catch (IOException e) {
+            System.out.println(e.getMessage());
+        }
     }
 }

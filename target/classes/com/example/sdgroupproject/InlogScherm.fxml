@@ -7,13 +7,13 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #459ab1;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #459ab1;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.sdgroupproject.InlogSchermController">
     <children>
         <AnchorPane layoutX="8.0" layoutY="8.0" prefHeight="385.0" prefWidth="584.0" style="-fx-background-color: #4293a9;">
             <children>
                 <AnchorPane layoutX="9.0" layoutY="9.0" prefHeight="366.0" prefWidth="566.0" style="-fx-background-color: #3f8ca1;">
                     <children>
-                        <Button layoutX="354.0" layoutY="104.0" mnemonicParsing="false" text="Log in" />
+                        <Button fx:id="LogInStudent" layoutX="354.0" layoutY="104.0" mnemonicParsing="false" onAction="#handleButtonLogInStudent" text="Log in" />
                         <Label layoutX="163.0" layoutY="107.0" text="Log in als student" textFill="WHITE">
                             <font>
                                 <Font name="Candara" size="15.0" />
@@ -24,7 +24,7 @@
                                 <Font name="Candara" size="15.0" />
                             </font>
                         </Label>
-                        <Button layoutX="354.0" layoutY="160.0" mnemonicParsing="false" text="Log in" />
+                        <Button fx:id="LogInDocent" layoutX="354.0" layoutY="160.0" mnemonicParsing="false" onAction="#handleButtonLogInDocent" text="Log in" />
                         <Separator layoutX="149.0" layoutY="141.0" prefHeight="6.0" prefWidth="268.0" />
                         <Separator layoutX="149.0" layoutY="87.0" prefHeight="6.0" prefWidth="268.0" />
                         <Separator layoutX="149.0" layoutY="198.0" prefHeight="6.0" prefWidth="268.0" />
