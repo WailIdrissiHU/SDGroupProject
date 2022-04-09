@@ -9,6 +9,7 @@ import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
+
 import java.io.IOException;
 
 public class HomeSchermController {
@@ -36,7 +37,6 @@ public class HomeSchermController {
             newStage.setScene(new Scene(root));
             newStage.initModality(Modality.APPLICATION_MODAL);
             newStage.showAndWait();
-//            ((Node) (actionEvent.getSource())).getScene().getWindow().hide();
         } catch (IOException e) {
             System.out.println(e.getMessage());
         }
@@ -53,7 +53,6 @@ public class HomeSchermController {
             newStage.setScene(new Scene(root));
             newStage.initModality(Modality.APPLICATION_MODAL);
             newStage.showAndWait();
-//            ((Node) (actionEvent.getSource())).getScene().getWindow().hide();
         } catch (IOException e) {
             System.out.println(e.getMessage());
         }
@@ -70,7 +69,6 @@ public class HomeSchermController {
             newStage.setScene(new Scene(root));
             newStage.initModality(Modality.APPLICATION_MODAL);
             newStage.showAndWait();
-//            ((Node) (actionEvent.getSource())).getScene().getWindow().hide();
         } catch (IOException e) {
             System.out.println(e.getMessage());
         }
@@ -79,6 +77,9 @@ public class HomeSchermController {
 
     @FXML
     public void handleButtonLoguit(ActionEvent actionEvent) throws IOException {
+        Stage stage = (Stage) logUitButton.getScene().getWindow();
+        stage.close();
+
         try {
             FXMLLoader loader = new FXMLLoader(getClass().getResource("InlogScherm.fxml"));
             Parent root = loader.load();
@@ -87,7 +88,6 @@ public class HomeSchermController {
             newStage.setScene(new Scene(root));
             newStage.initModality(Modality.APPLICATION_MODAL);
             newStage.showAndWait();
-//            ((Node) (actionEvent.getSource())).getScene().getWindow().hide();
         } catch (IOException e) {
             System.out.println(e.getMessage());
         }

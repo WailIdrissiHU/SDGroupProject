@@ -10,11 +10,11 @@
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.text.Font?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #459ab1;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #459ab1;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.sdgroupproject.RoosterController">
    <children>
       <AnchorPane layoutX="8.0" layoutY="8.0" prefHeight="385.0" prefWidth="584.0" style="-fx-background-color: #4293a9;">
          <children>
-            <Button layoutX="14.0" layoutY="11.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="82.0" text="Terug" />
+            <Button fx:id="TerugVanRooster" layoutX="14.0" layoutY="11.0" mnemonicParsing="false" onAction="#handleButtonTerugVanRooster" prefHeight="38.0" prefWidth="82.0" text="Terug" />
             <HBox layoutX="9.0" layoutY="63.0" prefHeight="314.0" prefWidth="566.0" style="-fx-background-color: #3f8ca1;">
                <children>
                   <GridPane>

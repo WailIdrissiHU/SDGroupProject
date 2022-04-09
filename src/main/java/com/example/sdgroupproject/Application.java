@@ -8,7 +8,7 @@ import java.io.IOException;
 public class Application extends javafx.application.Application {
     @Override
     public void start(Stage stage) throws IOException {
-        try { FXMLLoader fxmlLoader = new FXMLLoader(Application.class.getResource("AfwezigMelden.fxml"));
+        try { FXMLLoader fxmlLoader = new FXMLLoader(Application.class.getResource("HomeScherm.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
         stage.setScene(scene);
         stage.show(); } catch (Exception e) {System.out.println(e.getMessage());}
