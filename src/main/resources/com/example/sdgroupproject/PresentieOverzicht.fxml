@@ -17,7 +17,7 @@
                         <Font name="Candara" size="18.0" />
                     </font>
                 </Label>
-                <PieChart fx:id="PieChart" layoutX="103.0" layoutY="62.0" legendSide="LEFT" prefHeight="318.0" prefWidth="474.0" style="-fx-background-color: #3f8ca1; -fx-border-color: #ffffff;" />
+                <PieChart fx:id="PieChart" layoutX="103.0" layoutY="62.0" prefHeight="318.0" prefWidth="474.0" style="-fx-background-color: #3f8ca1; -fx-border-color: #ffffff;" />
             </children>
         </AnchorPane>
     </children>

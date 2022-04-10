@@ -3,16 +3,15 @@ package com.example.sdgroupproject;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
-import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.ChoiceBox;
+import javafx.scene.control.ComboBox;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
 
 import java.io.IOException;
-import java.nio.Buffer;
 
 public class AfwezigMeldenController {
 
@@ -20,7 +19,18 @@ public class AfwezigMeldenController {
     private Button TerugVanAfwezigMelden;
 
     @FXML
-    private ChoiceBox Redenen;
+    private ChoiceBox<String> Redenen;
+
+    @FXML
+    private ComboBox<String> Redenen2;
+
+    private String[]food = {"pizza","sushi", "ramen"};
+
+    public void initialize(){
+        Redenen.setValue("Applwe");
+        Redenen.setValue("Banana");
+        Redenen.setValue("Juice");
+    }
 
     @FXML
     public void handleButtonTerugVanAfwezigMelden(ActionEvent actionEvent) throws IOException {

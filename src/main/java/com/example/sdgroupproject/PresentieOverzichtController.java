@@ -30,41 +30,12 @@ public class PresentieOverzichtController {
         stage.close();
     }
 
-//    public void PieChart(Stage stage) {
-//        Scene scene = new Scene(new Group());
-//        stage.setTitle("Imported Fruits");
-//
-//        ObservableList<PieChart.Data> pieChartData =
-//                FXCollections.observableArrayList(
-//                        new PieChart.Data("Grapefruit", 13),
-//                        new PieChart.Data("Oranges", 25),
-//                        new PieChart.Data("Plums", 10),
-//                        new PieChart.Data("Pears", 22),
-//                        new PieChart.Data("Apples", 30));
-//        final PieChart PieChart = new PieChart(pieChartData);
-//        PieChart.setTitle("Imported Fruits");
-//
-//        ((Group) scene.getRoot()).getChildren().add(PieChart);
-//        stage.setScene(scene);
-//        stage.show();
-//    }
-
-    public void start(Stage primaryStage) throws Exception {
-        primaryStage.setTitle("My First JavaFX App");
-
-        PieChart pieChart = new PieChart();
-
-        PieChart.Data slice1 = new PieChart.Data("Desktop", 213);
-        PieChart.Data slice2 = new PieChart.Data("Phone"  , 67);
-        PieChart.Data slice3 = new PieChart.Data("Tablet" , 36);
-
-        PieChart.getData().add(slice1);
-        PieChart.getData().add(slice2);
-        PieChart.getData().add(slice3);
-
-        Stage newStage = new Stage();
-        newStage.setScene(new Scene(pieChart));
-        newStage.initModality(Modality.APPLICATION_MODAL);
-        newStage.showAndWait();
+    public void initialize() {
+        ObservableList<PieChart.Data> pieChartData = FXCollections.observableArrayList(
+                new PieChart.Data("Absent",1),
+                new PieChart.Data("Aanwezig",2));
+        PieChart.setData(pieChartData);
+        PieChart.setStartAngle(90);
+        PieChart.setTitle("Roll Call Attendance");
     }
 }
