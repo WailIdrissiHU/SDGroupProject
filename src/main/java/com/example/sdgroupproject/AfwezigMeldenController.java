@@ -10,8 +10,15 @@ import javafx.scene.control.ChoiceBox;
 import javafx.scene.control.ComboBox;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
+
 
 import java.io.IOException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 public class AfwezigMeldenController {
 
@@ -20,6 +27,9 @@ public class AfwezigMeldenController {
 
     @FXML
     public ComboBox<String> Redenen;
+//    private String user ="root";
+    private String url ="localhost";
+//    private String password ="root";
 
     @FXML
     public void initialize(){
@@ -45,5 +55,27 @@ public class AfwezigMeldenController {
         } catch (IOException e) {
             System.out.println(e.getMessage());
         }
+    }
+
+    public void handleButtonAfwezigZetten(ActionEvent actionEvent) throws SQLException {
+
+        String gekozenReden = String.valueOf(Redenen.getSelectionModel());
+        String query = "INSERT INTO afmeldingen (reden) VALUE (?)";
+        
+        try (Connection connection = DriverManager.getConnection(gekozenReden);
+             PreparedStatement preparedStatement = connection.prepareStatement(query)){
+
+            preparedStatement.executeUpdate();
+            System.out.println("succes");
+        }catch (SQLException e){
+            Logger lgr = Logger.getLogger(AfwezigMeldenController.class.getName());
+            lgr.log(Level.SEVERE, e.getMessage(),e);
+
+        }
+
+
+
+
+
     }
 }
