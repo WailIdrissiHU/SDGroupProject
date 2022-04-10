@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
-<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.ComboBox?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.Pane?>
@@ -20,7 +20,6 @@
             <AnchorPane layoutX="8.0" layoutY="62.0" prefHeight="316.0" prefWidth="567.0" style="-fx-background-color: #3f8ca1;">
                <children>
                   <Button layoutX="479.0" layoutY="276.0" mnemonicParsing="false" text="Bevestigen" />
-                  <ChoiceBox fx:id="Redenen" layoutX="201.0" layoutY="73.0" prefHeight="26.0" prefWidth="274.0" />
                   <Label layoutX="339.0" layoutY="275.0" prefHeight="26.0" prefWidth="140.0" text="Bevestig je keuze" textFill="WHITE">
                      <font>
                         <Font name="Candara" size="14.0" />
@@ -36,6 +35,7 @@
                         <Font size="14.0" />
                      </font>
                   </Label>
+                  <ComboBox fx:id="Redenen" layoutX="201.0" layoutY="73.0" prefHeight="26.0" prefWidth="195.0" />
                </children>
             </AnchorPane>
          </children>

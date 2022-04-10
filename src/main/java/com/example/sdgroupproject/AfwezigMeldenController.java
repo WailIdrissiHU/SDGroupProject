@@ -19,17 +19,14 @@ public class AfwezigMeldenController {
     private Button TerugVanAfwezigMelden;
 
     @FXML
-    private ChoiceBox<String> Redenen;
+    public ComboBox<String> Redenen;
 
     @FXML
-    private ComboBox<String> Redenen2;
-
-    private String[]food = {"pizza","sushi", "ramen"};
-
     public void initialize(){
-        Redenen.setValue("Applwe");
-        Redenen.setValue("Banana");
-        Redenen.setValue("Juice");
+        Redenen.getItems().add("Ziek");
+        Redenen.getItems().add("Tandartsafspraak");
+        Redenen.getItems().add("Doktersafspraak");
+        Redenen.setValue("Anders");
     }
 
     @FXML

@@ -33,6 +33,9 @@ public class RoosterController {
     @FXML
     private TreeTableColumn Vrijdag;
 
+    public void initialize() {
+        
+    }
 
     @FXML
     public void handleButtonTerugVanRooster(ActionEvent actionEvent) throws IOException {
