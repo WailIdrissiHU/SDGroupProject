@@ -17,13 +17,13 @@
             <Button fx:id="TerugVanRooster" layoutX="14.0" layoutY="11.0" mnemonicParsing="false" onAction="#handleButtonTerugVanRooster" prefHeight="38.0" prefWidth="82.0" text="Terug" />
             <HBox layoutX="9.0" layoutY="63.0" prefHeight="314.0" prefWidth="566.0" style="-fx-background-color: #3f8ca1;">
                <children>
-                  <TreeTableView prefHeight="315.0" prefWidth="566.0" style="-fx-border-color: #ffffff;">
+                  <TreeTableView fx:id="TableView" prefHeight="315.0" prefWidth="566.0" style="-fx-border-color: #ffffff;">
                     <columns>
-                      <TreeTableColumn prefWidth="107.20004463195801" text="Maandag" />
-                        <TreeTableColumn prefWidth="114.40001678466797" text="Dinsdag" />
-                        <TreeTableColumn prefWidth="109.5999755859375" text="Woensdag" />
-                        <TreeTableColumn prefWidth="118.39996337890625" text="Donderdag" />
-                        <TreeTableColumn prefWidth="116.00003051757812" text="Vrijdag" />
+                      <TreeTableColumn fx:id="Maandag" prefWidth="107.20004463195801" text="Maandag" />
+                        <TreeTableColumn fx:id="Dinsdag" prefWidth="114.40001678466797" text="Dinsdag" />
+                        <TreeTableColumn fx:id="Woensdag" prefWidth="109.5999755859375" text="Woensdag" />
+                        <TreeTableColumn fx:id="Donderdag" prefWidth="118.39996337890625" text="Donderdag" />
+                        <TreeTableColumn fx:id="Vrijdag" prefWidth="116.00003051757812" text="Vrijdag" />
                     </columns>
                   </TreeTableView>
                </children></HBox>
@@ -36,6 +36,5 @@
             <Button fx:id="NaarAfwezigMelden" layoutX="108.0" layoutY="11.0" mnemonicParsing="false" onAction="#handleButtonNaarAfwezigMelden" prefHeight="38.0" prefWidth="82.0" text="OOAD" />
          </children>
       </AnchorPane>
-      <AnchorPane layoutX="-134.0" layoutY="-200.0" prefHeight="200.0" prefWidth="200.0" />
    </children>
 </Pane>

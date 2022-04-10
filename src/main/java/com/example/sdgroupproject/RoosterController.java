@@ -6,7 +6,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.Button;
+import javafx.scene.control.*;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
 import java.io.IOException;
@@ -18,6 +18,21 @@ public class RoosterController {
 
     @FXML
     private Button NaarAfwezigMelden;
+
+    @FXML
+    private TreeTableView TableView;
+
+    @FXML
+    private TreeTableColumn Maandag;
+    @FXML
+    private TreeTableColumn Dinsdag;
+    @FXML
+    private TreeTableColumn Woensdag;
+    @FXML
+    private TreeTableColumn Donderdag;
+    @FXML
+    private TreeTableColumn Vrijdag;
+
 
     @FXML
     public void handleButtonTerugVanRooster(ActionEvent actionEvent) throws IOException {
