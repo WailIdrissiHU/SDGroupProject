@@ -61,7 +61,7 @@ public class AfwezigMeldenController {
 
         String gekozenReden = String.valueOf(Redenen.getSelectionModel());
         String query = "INSERT INTO afmeldingen (reden) VALUE (?)";
-        
+
         try (Connection connection = DriverManager.getConnection(gekozenReden);
              PreparedStatement preparedStatement = connection.prepareStatement(query)){
 
