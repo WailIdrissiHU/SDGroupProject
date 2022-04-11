@@ -40,4 +40,8 @@ public class Student {
     public void setAchterNaam(String achterNaam) {
         this.achterNaam.set(achterNaam);
     }
+
+    public void setWachtWoord(String wachtWoord) {
+        this.wachtWoord = wachtWoord;
+    }
 }

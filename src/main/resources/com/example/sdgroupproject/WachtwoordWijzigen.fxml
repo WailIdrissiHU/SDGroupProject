@@ -7,19 +7,21 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.sdgroupproject.WachtwoordWijzigenController">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.sdgroupproject.WachtwoordWijzigenController">
    <children>
       <Label layoutX="237.0" layoutY="88.0" text="Naam:" />
       <Label layoutX="237.0" layoutY="155.0" text="ID:" />
       <TextField fx:id="docentNaam" editable="false" layoutX="237.0" layoutY="114.0" promptText="Naam" />
       <TextField fx:id="docentId" editable="false" layoutX="237.0" layoutY="180.0" promptText="Docent ID" />
-      <Label layoutX="237.0" layoutY="225.0" text="Wijzig wachtwoord" />
-      <PasswordField fx:id="nieuwWachtwoord" layoutX="237.0" layoutY="251.0" promptText="Nieuw Wachtwoord ..." />
-      <Button layoutX="474.0" layoutY="347.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="125.0" text="Wijzig wachtwoord" />
+      <Label layoutX="237.0" layoutY="225.0" text="Wijzig wachtwoord: " />
+      <PasswordField fx:id="nieuwWachtwoord" layoutX="237.0" layoutY="289.0" promptText="Nieuw Wachtwoord ..." />
+      <Button layoutX="474.0" layoutY="347.0" mnemonicParsing="false" onAction="#handleButtonBevestigen" prefHeight="38.0" prefWidth="125.0" text="Wijzig wachtwoord" />
       <Label alignment="CENTER" prefHeight="57.0" prefWidth="614.0" style="-fx-background-color: #459ab1;" text="Wachtwoord wijzigen" textFill="WHITE">
          <font>
             <Font name="Candara" size="18.0" />
          </font></Label>
       <Button fx:id="TerugVanWachtwoordWijzigen" layoutX="14.0" layoutY="9.0" mnemonicParsing="false" onAction="#handleButtonTerugVanWachtwoordWijzigen" prefHeight="38.0" prefWidth="82.0" text="Terug" />
+      <PasswordField fx:id="herhaalNieuwWachtwoord" layoutX="237.0" layoutY="321.0" promptText="Herhaal Nieuw Wachtwoord" />
+      <PasswordField fx:id="oudWachtwoord" layoutX="237.0" layoutY="250.0" promptText="Oud Wachtwoord" />
    </children>
 </AnchorPane>
