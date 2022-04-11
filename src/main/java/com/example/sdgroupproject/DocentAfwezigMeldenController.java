@@ -21,8 +21,10 @@ public class DocentAfwezigMeldenController {
 
         final ObservableList<Student> data = FXCollections.observableArrayList(
             new Student("Waïl", "Idrissi"),
-            new Student("Joseph", "Tawiah"));
-        
+            new Student("Joseph", "Tawiah"),
+            new Student("Thom", "Harland"),
+            new Student("Jayro", "Pattimaipau"));
+
         naam.setCellValueFactory(new PropertyValueFactory<Student, String>("naam"));
         achterNaam.setCellValueFactory(new PropertyValueFactory<Student, String>("achterNaam"));
 

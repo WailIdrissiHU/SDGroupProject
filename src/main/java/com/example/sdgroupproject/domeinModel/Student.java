@@ -1,11 +1,13 @@
 package com.example.sdgroupproject.domeinModel;
 
 import javafx.beans.property.SimpleStringProperty;
+import javafx.scene.control.CheckBox;
 
 public class Student {
     private int id;
     private SimpleStringProperty naam;
     private SimpleStringProperty achterNaam;
+    private CheckBox presentie;
     private String email;
     private String wachtWoord;
     private String opleiding;
