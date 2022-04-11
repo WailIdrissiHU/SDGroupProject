@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
-<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.ComboBox?>
 <?import javafx.scene.control.Label?>
-<?import javafx.scene.control.TreeTableColumn?>
-<?import javafx.scene.control.TreeTableView?>
+<?import javafx.scene.control.ListView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.Pane?>
@@ -17,23 +16,15 @@
             <Button fx:id="TerugVanRooster" layoutX="14.0" layoutY="11.0" mnemonicParsing="false" onAction="#handleButtonTerugVanRooster" prefHeight="38.0" prefWidth="82.0" text="Terug" />
             <HBox layoutX="9.0" layoutY="63.0" prefHeight="314.0" prefWidth="566.0" style="-fx-background-color: #3f8ca1;">
                <children>
-                  <TreeTableView fx:id="TableView" prefHeight="315.0" prefWidth="566.0" style="-fx-border-color: #ffffff;">
-                    <columns>
-                      <TreeTableColumn fx:id="Maandag" prefWidth="107.20004463195801" text="Maandag" />
-                        <TreeTableColumn fx:id="Dinsdag" prefWidth="114.40001678466797" text="Dinsdag" />
-                        <TreeTableColumn fx:id="Woensdag" prefWidth="109.5999755859375" text="Woensdag" />
-                        <TreeTableColumn fx:id="Donderdag" prefWidth="118.39996337890625" text="Donderdag" />
-                        <TreeTableColumn fx:id="Vrijdag" prefWidth="116.00003051757812" text="Vrijdag" />
-                    </columns>
-                  </TreeTableView>
+                  <ListView fx:id="RoosterLijst" prefHeight="314.0" prefWidth="568.0" />
                </children></HBox>
             <Label layoutX="260.0" layoutY="11.0" prefHeight="38.0" prefWidth="64.0" text="Rooster" textAlignment="CENTER" textFill="WHITE">
                <font>
                   <Font name="Candara" size="18.0" />
                </font>
             </Label>
-            <ChoiceBox layoutX="419.0" layoutY="17.0" prefWidth="150.0" />
             <Button fx:id="NaarAfwezigMelden" layoutX="108.0" layoutY="11.0" mnemonicParsing="false" onAction="#handleButtonNaarAfwezigMelden" prefHeight="38.0" prefWidth="82.0" text="OOAD" />
+            <ComboBox fx:id="weekComboBox" layoutX="419.0" layoutY="17.0" prefWidth="150.0" />
          </children>
       </AnchorPane>
    </children>
