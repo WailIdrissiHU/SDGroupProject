@@ -15,6 +15,22 @@ public class Student {
         this.achterNaam = new SimpleStringProperty(achterNaam);
     }
 
+    public String getNaam() {
+        return naam.get();
+    }
+
+    public String getAchterNaam() {
+        return achterNaam.get();
+    }
+
+    public SimpleStringProperty achterNaamProperty() {
+        return achterNaam;
+    }
+
+    public SimpleStringProperty naamProperty() {
+        return naam;
+    }
+
     public void setNaam(String naam) {
         this.naam.set(naam);
     }

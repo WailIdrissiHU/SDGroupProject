@@ -12,5 +12,6 @@ module com.example.sdgroupproject {
     requires java.sql;
 
     opens com.example.sdgroupproject to javafx.fxml;
+    opens com.example.sdgroupproject.domeinModel;
     exports com.example.sdgroupproject;
 }

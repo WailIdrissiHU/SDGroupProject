@@ -72,10 +72,5 @@ public class AfwezigMeldenController {
             lgr.log(Level.SEVERE, e.getMessage(),e);
 
         }
-
-
-
-
-
     }
 }
