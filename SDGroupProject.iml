@@ -44,6 +44,6 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="library" exported="" name="lib" level="project" />
+    <orderEntry type="library" name="javafx.web" level="project" />
   </component>
 </module>
