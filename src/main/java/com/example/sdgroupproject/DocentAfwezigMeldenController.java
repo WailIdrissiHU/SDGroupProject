@@ -3,6 +3,7 @@ package com.example.sdgroupproject;
 import com.example.sdgroupproject.domeinModel.Student;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
@@ -27,7 +28,13 @@ public class DocentAfwezigMeldenController {
 
         naam.setCellValueFactory(new PropertyValueFactory<Student, String>("naam"));
         achterNaam.setCellValueFactory(new PropertyValueFactory<Student, String>("achterNaam"));
+        presentie.setCellValueFactory(new PropertyValueFactory<Student, String>("Presentie"));
 
         presentieTabel.setItems(data);
     }
+
+    public void handleButtonRegistreerPresentie(ActionEvent actionEvent) {
+
+    }
+
 }

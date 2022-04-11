@@ -8,6 +8,7 @@ public class Student {
     private SimpleStringProperty naam;
     private SimpleStringProperty achterNaam;
     private CheckBox presentie;
+    private boolean presentieBoolean;
     private String email;
     private String wachtWoord;
     private String opleiding;
@@ -15,6 +16,7 @@ public class Student {
     public Student(String naam, String achterNaam) {
         this.naam = new SimpleStringProperty(naam);
         this.achterNaam = new SimpleStringProperty(achterNaam);
+        this.presentie = new CheckBox();
     }
 
     public String getNaam() {
@@ -23,6 +25,14 @@ public class Student {
 
     public String getAchterNaam() {
         return achterNaam.get();
+    }
+
+    public CheckBox getPresentie() {
+        return presentie;
+    }
+
+    public boolean isPresentie() {
+        return presentieBoolean;
     }
 
     public SimpleStringProperty achterNaamProperty() {
@@ -39,6 +49,16 @@ public class Student {
 
     public void setAchterNaam(String achterNaam) {
         this.achterNaam.set(achterNaam);
+    }
+
+    public void setPresentie(CheckBox presentie) {
+        this.presentie = presentie;
+    }
+
+    public Boolean setPresentieBoolean(CheckBox presentie1) {
+        if (presentie1.isSelected()) {
+            return this.presentieBoolean = true;
+        } return this.presentieBoolean = false;
     }
 
     public void setWachtWoord(String wachtWoord) {

@@ -27,12 +27,12 @@ public class AfwezigMeldenController {
 
     @FXML
     public ComboBox<String> Redenen;
-//    private String user ="root";
-    private String url ="localhost";
+    //    private String user ="root";
+    private String url = "localhost";
 //    private String password ="root";
 
     @FXML
-    public void initialize(){
+    public void initialize() {
         Redenen.getItems().add("Ziek");
         Redenen.getItems().add("Tandartsafspraak");
         Redenen.getItems().add("Doktersafspraak");
@@ -57,20 +57,4 @@ public class AfwezigMeldenController {
         }
     }
 
-    public void handleButtonAfwezigZetten(ActionEvent actionEvent) throws SQLException {
-
-        String gekozenReden = String.valueOf(Redenen.getSelectionModel());
-        String query = "INSERT INTO afmeldingen (reden) VALUE (?)";
-
-        try (Connection connection = DriverManager.getConnection(gekozenReden);
-             PreparedStatement preparedStatement = connection.prepareStatement(query)){
-
-            preparedStatement.executeUpdate();
-            System.out.println("succes");
-        }catch (SQLException e){
-            Logger lgr = Logger.getLogger(AfwezigMeldenController.class.getName());
-            lgr.log(Level.SEVERE, e.getMessage(),e);
-
-        }
-    }
 }
