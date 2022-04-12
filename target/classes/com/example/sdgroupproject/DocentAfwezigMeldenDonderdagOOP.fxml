@@ -12,13 +12,13 @@
    <children>
       <AnchorPane layoutX="8.0" layoutY="8.0" prefHeight="385.0" prefWidth="584.0" style="-fx-background-color: #4293a9;">
          <children>
-            <Button fx:id="terugNaarRooster" layoutX="14.0" layoutY="11.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="82.0" text="Terug" />
+            <Button fx:id="terugNaarRooster" layoutX="14.0" layoutY="11.0" mnemonicParsing="false" onAction="#handleButtonTerugNaarRooster" prefHeight="38.0" prefWidth="82.0" text="Terug" />
             <HBox layoutX="9.0" layoutY="63.0" prefHeight="314.0" prefWidth="566.0" style="-fx-background-color: #3f8ca1;">
                <children>
                   <TableView fx:id="presentieTabel" prefHeight="314.0" prefWidth="572.0" />
                </children>
             </HBox>
-            <Label layoutX="254.0" layoutY="11.0" prefHeight="38.0" prefWidth="76.0" text="V1D | OOP" textAlignment="CENTER" textFill="WHITE">
+            <Label fx:id="donderdagOOPLabel" layoutX="204.0" layoutY="11.0" prefHeight="38.0" prefWidth="175.0" text="Donderdag | V1D | OOP" textAlignment="CENTER" textFill="WHITE">
                <font>
                   <Font name="Candara" size="18.0" />
                </font>

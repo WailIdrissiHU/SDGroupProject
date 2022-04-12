@@ -21,11 +21,11 @@
             <ComboBox fx:id="weekComboBox" layoutX="419.0" layoutY="17.0" prefWidth="150.0" />
             <AnchorPane layoutY="59.0" prefHeight="326.0" prefWidth="586.0" style="-fx-background-color: #3f8ca1;">
                <children>
-                  <Button fx:id="naarAfwezigMeldenMaandag" layoutX="89.0" layoutY="35.0" mnemonicParsing="false" onAction="#handleButtonNaarAfwezigMelden" prefHeight="38.0" prefWidth="407.0" text="OOAD | 13:00 - 17:00 | HL15-6.001" />
-                  <Button fx:id="naarAfwezigMeldenSDProj" layoutX="89.0" layoutY="74.0" mnemonicParsing="false" onAction="#handleButtonNaarAfwezigMeldenSDProj" prefHeight="38.0" prefWidth="407.0" text="SD PROJ | 17:00 - 18:00 | HL15-6.001" />
-                  <Button fx:id="naarAfwezigMeldenDinsdagOOP" layoutX="89.0" layoutY="137.0" mnemonicParsing="false" onAction="#handleButtonNaarAfwezigMeldenDinsdagOOP" prefHeight="38.0" prefWidth="407.0" text="OOP | 17:00 - 18:00 | HL15-5.080" />
-                  <Button fx:id="naarAfwezigMeldenDonderdagOOP" layoutX="89.0" layoutY="273.0" mnemonicParsing="false" onAction="#handleButtonNaarAfwezigMeldenDonderdagOOP" prefHeight="38.0" prefWidth="407.0" text="OOP | 17:00 - 18:00 | HL15-5.080" />
-                  <Button fx:id="naarAfwezigMeldenWoensdagOOAD" layoutX="89.0" layoutY="204.0" mnemonicParsing="false" onAction="#handleButtonNaarAfwezigMeldenWoensdagOOAD" prefHeight="38.0" prefWidth="407.0" text="OOAD | 13:00 - 17:00 | HL15-6.001" />
+                  <Button fx:id="naarAfwezigMeldenMaandag" layoutX="89.0" layoutY="35.0" mnemonicParsing="false" onAction="#handleButtonNaarAfwezigMelden" prefHeight="38.0" prefWidth="407.0" text="MA | OOAD | 13:00 - 17:00 | HL15-6.001" />
+                  <Button fx:id="naarAfwezigMeldenSDProj" layoutX="89.0" layoutY="74.0" mnemonicParsing="false" onAction="#handleButtonNaarAfwezigMeldenSDProj" prefHeight="38.0" prefWidth="407.0" text="MA | SD PROJ | 17:00 - 18:00 | HL15-6.001" />
+                  <Button fx:id="naarAfwezigMeldenDinsdagOOP" layoutX="89.0" layoutY="137.0" mnemonicParsing="false" onAction="#handleButtonNaarAfwezigMeldenDinsdagOOP" prefHeight="38.0" prefWidth="407.0" text="DI | OOP | 17:00 - 18:00 | HL15-5.080" />
+                  <Button fx:id="naarAfwezigMeldenDonderdagOOP" layoutX="89.0" layoutY="273.0" mnemonicParsing="false" onAction="#handleButtonNaarAfwezigMeldenDonderdagOOP" prefHeight="38.0" prefWidth="407.0" text="DO | OOP | 17:00 - 18:00 | HL15-5.080" />
+                  <Button fx:id="naarAfwezigMeldenWoensdagOOAD" layoutX="89.0" layoutY="204.0" mnemonicParsing="false" onAction="#handleButtonNaarAfwezigMeldenWoensdagOOAD" prefHeight="38.0" prefWidth="407.0" text="WO | OOAD | 13:00 - 17:00 | HL15-6.001" />
                   <Label layoutX="11.0" layoutY="35.0" text="Maandag" textFill="WHITE" />
                   <Label layoutX="14.0" layoutY="137.0" text="Dinsdag" textFill="WHITE" />
                   <Label layoutX="16.0" layoutY="204.0" text="Woensdag" textFill="WHITE" />

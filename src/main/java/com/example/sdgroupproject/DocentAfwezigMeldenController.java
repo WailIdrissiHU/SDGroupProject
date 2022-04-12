@@ -8,25 +8,42 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.Button;
-import javafx.scene.control.TableColumn;
-import javafx.scene.control.TableView;
+import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
 
+import java.io.BufferedWriter;
 import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
 
 public class DocentAfwezigMeldenController {
 
+    Path p1 = Path.of("src/main/resources/files/presentie.txt");
+    BufferedWriter bufferedWriter;
+
     @FXML
     private Button terugNaarRooster;
-
     @FXML
     private Button registreerPresentie;
 
+
     @FXML
     private TableView<Student> presentieTabel;
+
+
+    @FXML
+    private Label maandagOOADLabel;
+    @FXML
+    private Label maandagSDGPLabel;
+    @FXML
+    private Label dinsdagOOPLabel;
+    @FXML
+    private Label woensdagOOADLabel;
+    @FXML
+    private Label donderdagOOPLabel;
+
 
     public void initialize() {
         TableColumn<Student, String> naam = new TableColumn<Student, String>("Naam");
@@ -67,7 +84,11 @@ public class DocentAfwezigMeldenController {
 
     @FXML
     public void handleButtonRegistreerPresentie(ActionEvent actionEvent) throws IOException {
-        Stage stage = (Stage) registreerPresentie.getScene().getWindow();
-        stage.close();
+        bufferedWriter = Files.newBufferedWriter(p1);
+        bufferedWriter.write(maandagOOADLabel.getText()+);
+
+        Alert presentieGemeld = new Alert(Alert.AlertType.CONFIRMATION);
+        presentieGemeld.setContentText("Presentie is succesvol geregistreerd!");
+
     }
 }

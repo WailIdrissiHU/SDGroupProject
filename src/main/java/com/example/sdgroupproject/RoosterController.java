@@ -15,7 +15,12 @@ import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
+import org.controlsfx.validation.ValidateEvent;
+
+import java.io.BufferedWriter;
 import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
 import java.util.Collection;
 
 public class RoosterController {
@@ -26,19 +31,14 @@ public class RoosterController {
 
     @FXML
     private Button naarAfwezigMeldenMaandag;
-
     @FXML
     private Button naarAfwezigMeldenSDProj;
-
     @FXML
     private Button naarAfwezigMeldenDinsdagOOP;
-
     @FXML
     private Button naarAfwezigMeldenWoensdagOOAD;
-
     @FXML
     private Button naarAfwezigMeldenDonderdagOOP;
-
 
     @FXML
     private ComboBox weekComboBox;
@@ -46,7 +46,10 @@ public class RoosterController {
     @FXML
     private Button naarAfwezigMeldenViaTabel;
 
-//    public void initialize() {}
+    public void initialize() {
+        weekComboBox.setValue("Week 6");
+        weekComboBox.getItems().addAll("Week 6","Week 7", "Week 8", "Week 9", "Week 10", "Week 11", "Week 12");
+    }
 
     @FXML
     public void handleButtonTerugVanRooster(ActionEvent actionEvent) throws IOException {
@@ -115,7 +118,7 @@ public class RoosterController {
         stage.close();
 
         try {
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("DocentAfwezigMeldenWoensdagOOP.fxml"));
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("DocentAfwezigMeldenWoensdagOOAD.fxml"));
             Parent root = loader.load();
 
             Stage newStage = new Stage();
