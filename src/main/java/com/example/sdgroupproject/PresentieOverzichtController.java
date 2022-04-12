@@ -32,8 +32,8 @@ public class PresentieOverzichtController {
 
     public void initialize() {
         ObservableList<PieChart.Data> pieChartData = FXCollections.observableArrayList(
-                new PieChart.Data("Absent",1),
-                new PieChart.Data("Aanwezig",2));
+                new PieChart.Data("Aantal dagen absent: 1",1),
+                new PieChart.Data("Aantal dagen aanwezig: 2",2));
         PieChart.setData(pieChartData);
         PieChart.setStartAngle(90);
         PieChart.setTitle("Roll Call Attendance");

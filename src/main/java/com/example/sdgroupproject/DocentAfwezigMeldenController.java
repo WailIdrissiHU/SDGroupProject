@@ -23,6 +23,7 @@ public class DocentAfwezigMeldenController {
     Path p1 = Path.of("src/main/resources/files/presentie.txt");
     BufferedWriter bufferedWriter;
 
+
     @FXML
     private Button terugNaarRooster;
     @FXML
@@ -59,7 +60,7 @@ public class DocentAfwezigMeldenController {
 
         naam.setCellValueFactory(new PropertyValueFactory<Student, String>("naam"));
         achterNaam.setCellValueFactory(new PropertyValueFactory<Student, String>("achterNaam"));
-        presentie.setCellValueFactory(new PropertyValueFactory<Student, String>("Presentie"));
+        presentie.setCellValueFactory(new PropertyValueFactory<Student, String>("presentie"));
 
         presentieTabel.setItems(data);
     }
@@ -83,12 +84,20 @@ public class DocentAfwezigMeldenController {
     }
 
     @FXML
-    public void handleButtonRegistreerPresentie(ActionEvent actionEvent) throws IOException {
-        bufferedWriter = Files.newBufferedWriter(p1);
-        bufferedWriter.write(maandagOOADLabel.getText()+);
-
-        Alert presentieGemeld = new Alert(Alert.AlertType.CONFIRMATION);
-        presentieGemeld.setContentText("Presentie is succesvol geregistreerd!");
-
-    }
+    public void handleButtonRegistreerPresentie(ActionEvent actionEvent, String message) throws IOException {}
+////        bufferedWriter = Files.newBufferedWriter(p1);
+////        bufferedWriter.write(maandagOOADLabel.getText());
+////
+////        Alert presentieGemeld = new Alert(Alert.AlertType.CONFIRMATION);
+////        presentieGemeld.setContentText("Presentie is succesvol geregistreerd!");
+//
+//        String registratie = "<naam student> is ";
+//
+//        if (presentieTabel.getColumns(.isSelected())
+//            message += "aanwezig";
+//
+//        if (!presentie.isSelected())
+//            message += "afwezig";
+//
+//    }
 }
