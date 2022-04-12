@@ -7,6 +7,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.PasswordField;
 import javafx.stage.Modality;
@@ -19,6 +20,7 @@ import java.nio.file.Path;
 import java.util.List;
 
 public class WachtwoordWijzigenController {
+    Alert alert;
     Student student = new Student("testVoor","testAchter");
     Path p1 = Path.of("src/main/resources/files/inlogGegevens.txt");
     BufferedWriter bufferedWriter;
@@ -54,10 +56,15 @@ public class WachtwoordWijzigenController {
 //            bufferedReader.close();
 //        }
 //        updateLoginUsernamesAndPasswords();
-        if (nieuwWachtwoord.getText().equals(herhaalNieuwWachtwoord.getText())){
+        if (nieuwWachtwoord.getText().equals(herhaalNieuwWachtwoord.getText()) && !nieuwWachtwoord.getText().equals("")){
+            alert = new Alert(Alert.AlertType.CONFIRMATION);
             bufferedWriter.write(nieuwWachtwoord.getText());
             student.setWachtWoord(nieuwWachtwoord.getText());
-        }
+            nieuwWachtwoord.setText(null);
+            herhaalNieuwWachtwoord.setText(null);
+            alert.setContentText("Wachtwoord wijzigen gelukt!");
+            alert.showAndWait();
+        }else alert.setContentText("Wijzigen mislukt"); alert.showAndWait();
         bufferedWriter.close();
 
     }
