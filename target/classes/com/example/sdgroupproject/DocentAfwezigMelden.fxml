@@ -23,7 +23,7 @@
                   <Font name="Candara" size="18.0" />
                </font>
             </Label>
-            <Button layoutX="487.0" layoutY="11.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="82.0" text="Registreer" />
+            <Button fx:id="registreerPresentie" layoutX="487.0" layoutY="11.0" mnemonicParsing="false" onAction="#handleButtonRegistreerPresentie" prefHeight="38.0" prefWidth="82.0" text="Registreer" />
          </children>
       </AnchorPane>
    </children>
