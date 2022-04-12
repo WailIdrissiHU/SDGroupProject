@@ -39,11 +39,12 @@ public class InlogScherm2Controller {
     private String deel2;
     private int error = 0;
 
-    public void initialize() throws FileNotFoundException {
+    public void initialize() throws FileNotFoundException, NoSuchAlgorithmException{
         Scanner scanner = new Scanner(file);
 //        loginInfo.clear();
 //        loginInfo = new HashMap<>();
         while (scanner.hasNext()){
+            System.out.println(encryptor.encryptString("Blabla"));
             String[] usernameAndPassword = scanner.nextLine().split(",");
 //            deel1 = usernameAndPassword[0];
 //            deel2= usernameAndPassword[1];

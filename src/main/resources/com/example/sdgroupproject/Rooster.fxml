@@ -3,9 +3,8 @@
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.ComboBox?>
 <?import javafx.scene.control.Label?>
-<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.Separator?>
 <?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
@@ -14,17 +13,28 @@
       <AnchorPane layoutX="8.0" layoutY="8.0" prefHeight="385.0" prefWidth="584.0" style="-fx-background-color: #4293a9;">
          <children>
             <Button fx:id="TerugVanRooster" layoutX="14.0" layoutY="11.0" mnemonicParsing="false" onAction="#handleButtonTerugVanRooster" prefHeight="38.0" prefWidth="82.0" text="Terug" />
-            <HBox layoutX="9.0" layoutY="63.0" prefHeight="314.0" prefWidth="566.0" style="-fx-background-color: #3f8ca1;">
-               <children>
-                  <TableView fx:id="roosterLijst" prefHeight="314.0" prefWidth="574.0" />
-               </children></HBox>
             <Label layoutX="260.0" layoutY="11.0" prefHeight="38.0" prefWidth="64.0" text="Rooster" textAlignment="CENTER" textFill="WHITE">
                <font>
                   <Font name="Candara" size="18.0" />
                </font>
             </Label>
-            <Button fx:id="NaarAfwezigMelden" layoutX="108.0" layoutY="11.0" mnemonicParsing="false" onAction="#handleButtonNaarAfwezigMelden" prefHeight="38.0" prefWidth="82.0" text="OOAD" />
             <ComboBox fx:id="weekComboBox" layoutX="419.0" layoutY="17.0" prefWidth="150.0" />
+            <AnchorPane layoutY="59.0" prefHeight="326.0" prefWidth="586.0" style="-fx-background-color: #3f8ca1;">
+               <children>
+                  <Button fx:id="naarAfwezigMeldenMaandag" layoutX="89.0" layoutY="35.0" mnemonicParsing="false" onAction="#handleButtonNaarAfwezigMelden" prefHeight="38.0" prefWidth="407.0" text="OOAD | 13:00 - 17:00 | HL15-6.001" />
+                  <Button fx:id="naarAfwezigMeldenSDProj" layoutX="89.0" layoutY="74.0" mnemonicParsing="false" onAction="#handleButtonNaarAfwezigMeldenSDProj" prefHeight="38.0" prefWidth="407.0" text="SD PROJ | 17:00 - 18:00 | HL15-6.001" />
+                  <Button fx:id="naarAfwezigMeldenDinsdagOOP" layoutX="89.0" layoutY="137.0" mnemonicParsing="false" onAction="#handleButtonNaarAfwezigMeldenDinsdagOOP" prefHeight="38.0" prefWidth="407.0" text="OOP | 17:00 - 18:00 | HL15-5.080" />
+                  <Button fx:id="naarAfwezigMeldenDonderdagOOP" layoutX="89.0" layoutY="273.0" mnemonicParsing="false" onAction="#handleButtonNaarAfwezigMeldenDonderdagOOP" prefHeight="38.0" prefWidth="407.0" text="OOP | 17:00 - 18:00 | HL15-5.080" />
+                  <Button fx:id="naarAfwezigMeldenWoensdagOOAD" layoutX="89.0" layoutY="204.0" mnemonicParsing="false" onAction="#handleButtonNaarAfwezigMeldenWoensdagOOAD" prefHeight="38.0" prefWidth="407.0" text="OOAD | 13:00 - 17:00 | HL15-6.001" />
+                  <Label layoutX="11.0" layoutY="35.0" text="Maandag" textFill="WHITE" />
+                  <Label layoutX="14.0" layoutY="137.0" text="Dinsdag" textFill="WHITE" />
+                  <Label layoutX="16.0" layoutY="204.0" text="Woensdag" textFill="WHITE" />
+                  <Label layoutX="14.0" layoutY="273.0" text="Donderdag" textFill="WHITE" />
+                  <Separator layoutX="11.0" layoutY="124.0" prefHeight="0.0" prefWidth="573.0" />
+                  <Separator layoutX="11.0" layoutY="190.0" prefHeight="0.0" prefWidth="573.0" />
+                  <Separator layoutX="11.0" layoutY="256.0" prefHeight="0.0" prefWidth="573.0" />
+               </children>
+            </AnchorPane>
          </children>
       </AnchorPane>
    </children>
