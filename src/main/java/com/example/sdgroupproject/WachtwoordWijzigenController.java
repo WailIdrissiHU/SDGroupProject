@@ -43,6 +43,7 @@ public class WachtwoordWijzigenController {
 
     @FXML
     public void handleButtonBevestigen(ActionEvent actionEvent) throws IOException {
+
         bufferedWriter = Files.newBufferedWriter(p1);
         String[] arrayList;
 //        bufferedReader=Files.newBufferedReader(p1);

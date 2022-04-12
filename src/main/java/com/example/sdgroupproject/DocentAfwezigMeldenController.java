@@ -85,7 +85,7 @@ public class DocentAfwezigMeldenController {
     @FXML
     public void handleButtonRegistreerPresentie(ActionEvent actionEvent) throws IOException {
         bufferedWriter = Files.newBufferedWriter(p1);
-        bufferedWriter.write(maandagOOADLabel.getText()+);
+//        bufferedWriter.write(maandagOOADLabel.getText()+);
 
         Alert presentieGemeld = new Alert(Alert.AlertType.CONFIRMATION);
         presentieGemeld.setContentText("Presentie is succesvol geregistreerd!");
