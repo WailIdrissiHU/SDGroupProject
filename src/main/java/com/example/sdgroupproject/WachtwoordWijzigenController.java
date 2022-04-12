@@ -21,14 +21,16 @@ import java.util.List;
 
 public class WachtwoordWijzigenController {
     Alert alert;
-    Student student = new Student("testVoor","testAchter");
+    Student student = new Student("testVoor", "testAchter");
     Path p1 = Path.of("src/main/resources/files/inlogGegevens.txt");
     BufferedWriter bufferedWriter;
 
     @FXML
     private Button TerugVanWachtwoordWijzigen;
+
     @FXML
     private PasswordField nieuwWachtwoord;
+
     @FXML
     private PasswordField herhaalNieuwWachtwoord;
 
@@ -41,7 +43,7 @@ public class WachtwoordWijzigenController {
 
     @FXML
     public void handleButtonBevestigen(ActionEvent actionEvent) throws IOException {
-        bufferedWriter= Files.newBufferedWriter(p1);
+        bufferedWriter = Files.newBufferedWriter(p1);
         String[] arrayList;
 //        bufferedReader=Files.newBufferedReader(p1);
 
@@ -56,7 +58,7 @@ public class WachtwoordWijzigenController {
 //            bufferedReader.close();
 //        }
 //        updateLoginUsernamesAndPasswords();
-        if (nieuwWachtwoord.getText().equals(herhaalNieuwWachtwoord.getText()) && !nieuwWachtwoord.getText().equals("")){
+        if (nieuwWachtwoord.getText().equals(herhaalNieuwWachtwoord.getText()) && !nieuwWachtwoord.getText().equals("")) {
             alert = new Alert(Alert.AlertType.CONFIRMATION);
             bufferedWriter.write(nieuwWachtwoord.getText());
             student.setWachtWoord(nieuwWachtwoord.getText());
@@ -64,7 +66,8 @@ public class WachtwoordWijzigenController {
             herhaalNieuwWachtwoord.setText(null);
             alert.setContentText("Wachtwoord wijzigen gelukt!");
             alert.showAndWait();
-        }else alert.setContentText("Wijzigen mislukt"); alert.showAndWait();
+        } else alert.setContentText("Wijzigen mislukt");
+        alert.showAndWait();
         bufferedWriter.close();
 
     }

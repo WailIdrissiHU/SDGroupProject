@@ -58,7 +58,8 @@ public class Student {
     public Boolean setPresentieBoolean(CheckBox presentie1) {
         if (presentie1.isSelected()) {
             return this.presentieBoolean = true;
-        } return this.presentieBoolean = false;
+        }
+        return this.presentieBoolean = false;
     }
 
     public void setWachtWoord(String wachtWoord) {
